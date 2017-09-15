@@ -16,7 +16,6 @@ var vue = new Vue({
       { text: 'Transporter', value: 'TownSupport' },
       { text: 'Bodyguard', value: 'TownProtective' },
       { text: 'Doctor', value: 'TownProtective' },
-      { text: 'Vampire Hunter', value: 'TownKilling' },
       { text: 'Vigilante', value: 'TownKilling' },
       { text: 'Veteran', value: 'TownKilling' },
       { text: 'Godfather', value: 'Godfather' },
@@ -32,11 +31,8 @@ var vue = new Vue({
       { text: 'Serial Killer', value: 'NeutralKilling' },
       { text: 'Werewolf', value: 'NeutralKilling' },
       { text: 'Executioner', value: 'NeutralEvil' },
-      { text: 'Vampire', value: 'NeutralEvil' },
       { text: 'Jester', value: 'NeutralEvil' },
       { text: 'Witch', value: 'NeutralEvil' },
-      { text: 'Amnesiac', value: 'NeutralBenign' },
-      { text: 'Survivor', value: 'NeutralBenign' },
     ]
   },
   methods: {
@@ -117,16 +113,6 @@ var vue = new Vue({
   				else
   					alert('Someone\'s lying');
   				break;
-  			break;
-  			case "NeutralBenign":
-  				if(!this.isChecked($('#NeutralBenign')))
-  					this.check($('#NeutralBenign'));
-  				else if(!this.isChecked($('#Any')))
-  					this.check($('#Any'));
-  				else
-  					alert('Someone\'s lying');
-  				break;
-  			break;
   			break;
   			default:
   				// statements_def
